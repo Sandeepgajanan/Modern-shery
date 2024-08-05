@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "kajiro";
+  src: url("/Kajiro.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  width: 100%;
+  height: 100vh;
+}
+#back {
+  width: 100%;
+  height: 100vh;
+}
+#back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#top {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+#workingarea {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  height: 100vh;
+  max-width: 1920px;
+  color: white;
+}
+#nav {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#nav img {
+  height: 60px;
+}
+#nav #nright,
+#nleft {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+#nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  pointer-events: all;
+}
+#hero {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 3vw;
+}
+#heroleft {
+  min-width: 50%;
+}
+#heroright {
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#heroleft .elem {
+  position: relative;
+  height: 9vw;
+  overflow: hidden;
+}
+#heroleft .elem h1:nth-child(1) {
+  top: 0;
+}
+#heroleft .elem h1 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  line-height: 0.8;
+  font-family: "kajiro";
+  font-weight: 100;
+  font-size: 11vw;
+}
+#heroleft button {
+  pointer-events: all;
+  cursor: pointer;
+  margin-top: 2vw;
+  padding: 0.8vw 3vw;
+  font-family: "kajiro";
+  font-size: 2vw;
+}
+#heroright p {
+  text-align: right;
+  font-size: 14px;
+  font-weight: 300;
+}
+#heroright #imagediv {
+  width: 100%;
+  height: 150px;
+  background: url("/2.JPG");
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#heroright p:nth-child(3) {
+  margin-bottom: 70px;
+}
+@media (max-width: 480px) {
+  #workingarea {
+    width: 90%;
+  }
+  #nav {
+    display: none;
+  }
+
+  #hero {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vw;
+  }
+  #heroleft {
+    width: 100%;
+  }
+  #heroright {
+    display: none;
+  }
+  #heroleft .elem {
+    height: 18vw;
+  }
+  #heroleft .elem h1 {
+    font-size: 22vw;
+  }
+  #heroleft button {
+    font-size: 4vw;
+    padding: 1.6vw 6vw;
+  }
+}
