@@ -1,6 +1,6 @@
 @font-face {
   font-family: "kajiro";
-  src: url("./Kajiro.ttf");
+  src: url("./assets/Kajiro.ttf");
 }
 * {
   margin: 0;
@@ -116,7 +116,7 @@ body {
 #heroright #imagediv {
   width: 100%;
   height: 150px;
-  background: url("/2.JPG");
+  background: url("./assets/2.JPG");
   background-size: cover;
   background-position: center;
   margin-top: 20px;
